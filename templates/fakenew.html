@@ -1,0 +1,101 @@
+{% extends 'base1.html' %}
+{% block style %} 
+
+{%endblock style %} 
+
+{% block title %}Heart Disease Prediction{%endblock title %}
+
+{% block body %}
+
+
+<div class="container">
+    
+        
+            <center><h1>Heart Healthy Prediction</h1></center> <br><br>
+            <div class="row">
+            <div class="col-sm-6">
+   
+                <form action="result_new">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="Age">Patient Age</label>
+                        <input type="text" class="form-control" name="Age" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Gender">Patient Gender</label>
+                        <input type="text" class="form-control" name="Gender" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Chest_Pain">Patient Chest Pain</label>
+                        <input  list="browsers" type="text"  class="form-control" name="Chest_Pain" placeholder="" required>
+                        <datalist id="browsers">
+                        
+                            <option value=0> Typical </option>
+                            <option value=1>Asymptomatic</option>
+                            <option value=2>Non Typical</option>
+                          
+                        </datalist> 
+                    </div>
+                    <div class="form-group">
+                        <label for="Restbp">Patient Restbp</label>
+                        <input type="text" class="form-control" name="Restbp" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Chol">Patient Chol</label>
+                        <input type="text"  class="form-control" name="Chol" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="FBS">Patient FBS</label>
+                        <input type="text" class="form-control" name="FBS" placeholder="" required>
+                    </div>
+                </div>
+                    <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="Restecg">Patient Restecg</label>
+                        <input type="text" class="form-control" name="Restecg" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="thalach">Patient Thalach</label>
+                        <input type="text"  class="form-control" name="thalach" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Exang">Patient Exang</label>
+                        <input type="text"  class="form-control" name="Exang" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Oldpeak">Patient Oldpeak</label>
+                        <input type="text"  class="form-control" name="Oldpeak" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="slope">Patient Slope</label>
+                        <input type="text"  class="form-control" name="slope" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ca">Patient CA</label>
+                        <input type="text" class="form-control" name="ca" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="thal">Patient Thal</label>
+                        <input list="browsers1"  type="text"  class="form-control" name="thal" placeholder="" required>
+                        <datalist id="browsers1">                        
+                            <option value=0> Fixed </option>
+                            <option value=1>Normal</option>
+                            <option value=2>Reversable</option>                          
+                        </datalist> 
+                    </div>
+                </div>
+                </div><br>
+    <center><button type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button></center><br><br><br><br>
+</form>
+   
+</div>
+  
+</div>
+</div>
+</div>
+
+</div>
+      
+
+
+{% endblock body %}

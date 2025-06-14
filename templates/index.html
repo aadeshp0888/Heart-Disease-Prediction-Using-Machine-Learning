@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <!--Slideshow-->
+  <div class ="container-fluid my-2">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+   
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="https://www.summithealth.com/sites/default/files/2023-04/heart-disease-hub.jpg" class="d-block w-100 slideshow-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Heart Disease Detection</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="static/Images/2.jpg" class="d-block w-100 slideshow-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Heart Disease Detection</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/Images/3.jpg" class="d-block w-100 slideshow-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Heart Disease Detection</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+<!--Cards-->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+       <div class="section-title">
+        <h2>Various Disease Related to Heart</h2>
+        <div class="heading-section"></div>
+       </div>
+
+      <div class="row portfolio-container" data-aos="fade-right" data-aos-delay="500">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="https://www.maxlab.co.in/category/1665661641.jpg" class="img-fluid">
+            <div class="portfolio-info">
+              <h4>Coronary Artery Disease</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-aos="fade-up" data-aos-delay="500">
+          <div class="portfolio-wrap">
+            <img src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/21736-cardiac-arrest-illustration" class="img-fluid">
+            <div class="portfolio-info">
+              <h4>Cardiac Arrest</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-left" data-aos-delay="500">
+          <div class="portfolio-wrap">
+            <img src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/17351-pericardial-effusion" class="img-fluid">
+            <div class="portfolio-info">
+              <h4>Pericardial Disease</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-right" data-aos-delay="500">
+            <div class="portfolio-wrap">
+              <img src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/congestive-heart-failure.jpg" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>Congestive Heart Failure</h4>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/proxy/klQsG8VBXZB2GTAn8EZHHDkWnme9R27Tr_351nDAiJuHx1ZgWxmbjYD5luG8Uj4X-8q3LhElVw8GYiRT19scM-gV6gh-SY-eYXdNouJmJpnPvXnrCzEWNW2VehfrY7LRY49zQ1D7rsPCxQxuUQ" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>Arrhythmia</h4>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-left" data-aos-delay="500">
+            <div class="portfolio-wrap">
+              <img src="https://drraghu.com/wp-content/uploads/2022/07/Cong.-Heart-Disease.jpg" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>Congenital Heart Disease</h4>
+              </div>
+            </div>
+        </div>
+          
+     </div>
+ </div>
+</section>
+{% endblock body %}
